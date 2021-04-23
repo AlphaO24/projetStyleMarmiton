@@ -1,0 +1,27 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+      <ion-toolbar>
+        <ion-button expand="block" fill="outline" color="succes" href="profile">
+          <ion-label>Mon compte</ion-label>
+      </ion-button>
+      </ion-toolbar>
+    <ion-title>&nbsp;</ion-title>
+    <ion-buttons slot="end">
+      <ion-button expand="block" fill="outline" color="danger" routerLink="{{home}}">
+        <ion-label>Deconnexion</ion-label>
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card" *ngFor="let item of list" href="payer">
+        <img [src]="item.img">
+        <ion-label>
+            <h4>{{item.name}}</h4>
+        </ion-label>
+        <ion-button expand="block" fill="outline" color="info" href="payer">
+          <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-card>
+</ion-content>

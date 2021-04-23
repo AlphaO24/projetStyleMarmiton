@@ -1,0 +1,40 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-title>&nbsp;</ion-title>
+    <ion-buttons slot="end">
+      <ion-button expand="block" fill="outline" color="danger" routerLink="{{home}}">
+        <ion-label>Deconnexion</ion-label>
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <body>
+    
+    
+    <div class="content has-header" style="width: 100%;">
+      <form action="payer.page.html" method="POST">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Numero de la carte">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Date d'expiration">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="CCV">
+        </label>
+      </div>
+      <ion-button type="submit" expand="block" fill="outline" color="succes">
+        <ion-label>Payer</ion-label>
+    </ion-button>
+    </form>
+    </div>
+  </body>
+</ion-content>
